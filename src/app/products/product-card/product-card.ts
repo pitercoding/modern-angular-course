@@ -17,7 +17,6 @@ export class ProductCard {
   readonly addToCart = output<Product>();
 
   protected onAddToCart() {
-    console.log('Product added to cart!')
     this.addToCart.emit(this.product());
   }
 }
